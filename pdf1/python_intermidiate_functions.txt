@@ -1,0 +1,13 @@
+﻿Python - intermediate
+1.  Functions is a piece of code that contains some logic. The need for functions is that when there is duplication of code -means, there is repetitive logic in the code, everything can be combined into one generic function that will do this operation.
+In addition, this function is a logic that divides the code into certain responsibilities and thus the code is clearer and more organized.
+2.  The return value of a function is the value that will be returned in the logic in the function. When you call a function, it can return a value, which is the result you use for the rest of the code.
+For example - I have a function that connects two numbers and it returns the result of the connection. This result is the "return value".
+3.  Pass by value is a situation where the value of a certain variable is used in the code within a function. Using the value of the variable does not change the value of the variable outside the function. Because it's just a copy of the value of the variable and not the variable itself.
+Pass by reference is a situation where a pointer to the variable is used, so that if a change is made to the variable it affects the variable outside the function as well. Because you use a pointer that contains the value of the variable , and not just a copy of its value.
+4.  Scope is a part of the code where you can define or change or use variables. scope is defined by functions, indents or any code blocks. There are several types of variables: a global variable - is a variable that is defined in the first scope of the program so that its lifetime lasts until the end of the program.
+A local variable is a variable that is defined within a certain scope in the code. Its lifetime is until you leave the scope from which the variable is defined.
+9. Recursion is a piece of code in which the function repeats itself. In this way, the function solves a smaller part of the problem each time - in a simpler way that makes the process easier. The process of recursion happens until a certain condition happens and stops the loop. 
+Recursion can be used in problems that involve data in recursive structure like trees, links lists and graphs. In addition, Recursion can be used in problems that involve algorithms like Fibonacci sequences.
+It is possible to write code without using recursion, but there are situations where using recursion will greatly facilitate the solution process.
+Which is more efficient in terms of running time? Loops are significantly more efficient because they have fewer repeated function calls during runtime.
