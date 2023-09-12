@@ -23,6 +23,9 @@ class Person:
         id_list.remove(self.id)
         self.age = random.choice(age_list)
 
+    def __str__(self) -> str:
+        return f"hi {self.name}"
+
     # Getter method for the name attribute
     def get_name(self):
         return self.name

@@ -1,0 +1,11 @@
+﻿Python - Exceptions, Lists
+exeption:
+1.  An exception is the processor's way of telling us that something in the code we ran is not correct. Each error has a type and a name.
+When the program runs on the code and encounters an error it will stop (not completely) and raise the error "up", until there is nowhere to go, and then a message will be printed (so that we understand what we did).
+When we write code we will pay attention to all the errors that may happen and try to catch errors by: try & except.
+
+
+List Comprehension:
+1.  List comprehension is a way to perform several operations in a short way in one line.
+Basically run on variables and in addition you can put a condition on it.
+2.  No, it is not mandatory to use list comprehension - it is an optional feature that can make the code more readable and sometimes more efficient.

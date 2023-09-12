@@ -1,0 +1,25 @@
+﻿Python - File Handling, JSON
+
+
+file handling:
+
+
+1.  The first reason for using files in our software is the longevity and survival of the information. When we use a variable, the length of time the information will be saved is until the program is terminated. On the other hand, when we use the file, the information will be saved until we decide to delete it locally.
+A second reason is the sharing of information. Files can be shared between programs, while variables exist only in the same program.
+A third reason is backup and recovery of the information. If and when information is deleted it can be recovered if it is saved as a file. But if it variables it is not always possible to do so.
+2.  The use of files in software has several situations that can be dealt with.
+The first is W- which is writing to the file. This mode deletes what was in the file, and rewrites it.
+R- This mode allows reading the contents of the file.
+R+ - this mode bundles the operation of reading to the file and writing to it.
+A- This mode is different from the W mode, because it lets you write to the file but not overwrite what is already there, but add to it.
+Rb / wb / ab - these are all similar to the previous modes, except for the fact that they deal with binary files (b).
+
+
+JSON: 
+
+
+1.  A JSON file is a format for saving information into a file.
+It is effective for many uses such as: configuration settings or transferring information between server and client.
+The syntax of the file is similar to a dictionary, thus making the information readable and understandable.
+2.  The model we will use to work with JSON files is "json". This model contains central functions such as dump() or dumps() - which are responsible for converting the information format to JSON.
+or load() or loads() which are responsible for converting the information format from JSON to a programming language format.
