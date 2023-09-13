@@ -1,0 +1,20 @@
+﻿Python - Advanced
+OOP - Special Functions
+1.  magic functions are functions in a class that add additional functionality. They make it possible to create adjustments to the behaviors of objects in the class.
+Examples of such functions:
+1- def __init__(self, ...)
+2- def __str__ (self)
+3- def __len__(self)
+4- def __add__(self, other)
+2.  If we do not override the str function of a class, when we want to print an object, the program will print its place in memory instead of the object itself.
+3.  If we do not override the eq function of the class what will happen is that when we compare objects what will be checked is whether the two objects point to the same place in memory, not whether their values are equal.
+
+
+
+
+4.  The concept of operator overloading is an ability in programming to define a behavior for an operator.
+With the help of this feature it is possible to define which functionality will occur when a certain operator appears.
+For example, if we want to connect two objects, we can define that when the "+" operator appears, it will connect the values of these objects.
+5.  My output showed the error "TypeError: unsupported operand type(s) for +: 'Point' and 'Point' "
+It is like that because it is not possible to connect these two objects, because the connection that is made is not a connection of the values, but a connection of their location in their memory. And such an action is not possible.
+This can be fixed by defining the add function. This function will define what we want to connect when the "+" operator appears between objects. And there we will set it to connect the values of the objects, not the places in memory.
