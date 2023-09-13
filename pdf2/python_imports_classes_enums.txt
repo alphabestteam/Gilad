@@ -1,0 +1,78 @@
+﻿Python- Imports, Enums and Classes
+
+
+Imports:
+
+
+1. Import is a Python command that imports other code written from another file. Sometimes the file is in a folder so you have to import the folder and then the file. It is useful in situations where you use the functionality that exists in another file, and you don't want to write everything in your code, so you import the code to you - so that you can use this functionality.
+2.  When we import our file from another file, when the file is in another folder, we need to give a path that contains the folder, and from there route our file.
+If the path to the file is more than a separate folder, you can navigate using:
+ from <folder> import<file> .
+If the location is in a file in a folder and you want to get a file in another folder in the program use:
+ from ..<folder> import file.
+If the file is outside the program, you need to import the program in which it is located and navigate from there.
+3.  The reason the condition is used:
+if(__name__ == "__main__") -
+It is so that when we run the program, even if other files are imported into our project, only our program will run. By doing this we will save running time, because we will not run the files we imported, we will only use their functionality.
+
+
+Clases:
+
+
+4.  A class is an object that contains attributes. These attributes are characterized by values defined in the creation of the class.
+The attributes define the "identity" of the class. For example - the class Person: contains the attributes name and age.
+In addition, a class can contain functions, which extend the operations that the attributes in the class can perform.
+5.  One advantage that classes have is that they reduce the chance of errors. For the reason that all values (variables and functions) are grouped into one object that contains them all. This feature is called Encapsulation. And as a result, the class makes sure that all the required information is provided for these values, which leads to fewer problems.
+
+
+Another advantage that classes have is the reduction of duplicated code in the program. Because it is possible to define a class once that includes its attributes, and with its help create objects of this class, without using the definition of the attributes - because they are already defined in the class.
+
+
+Classes make the code more readable. Means that the classes enable more "human" writing, by defining objects that may contain variables from the real world, and with human logic. For example the Person class: which contains name and age.
+As a result, whoever reads the code does not have to bother with what and how each object is defined, and is content with the class attributes. This feature is called Abstraction.
+
+
+6.  Attributes in a class are variables that describe the class, and its purpose. In addition, they are objects that contain information that can be used. 
+For example, a person has attributes of age, name, place of residence, etc.
+So the person is the object and the name and age are its attributes.
+
+
+7. An object of a class is basically a variable that contains the attributes of the class and its functionality. A variable has unique values provided to it when it is created. 
+For example, a person has attributes of age, name, place of residence, etc.
+So the person is the object.
+
+
+8.  Constructor is the class's way of initializing its attribute values. By doing so, it constructs the class using the values it received.
+
+
+Destructor is a method to delete an object of the class that exists in memory. It basically cleans the space that the object occupies in memory.
+This method exists when an object leaks outside the scope in which it is defined.
+
+
+9.  The concept of self in a class is a convention when there is a reference in the class to an attribute that exists within it.
+self It is essential to distinguish between a variable of the class and an external variable.
+
+
+10.  Inheritance is a method in classes where a class can be contained within another class. So the attributes and functions can also appear in the containing class, but not the other way around.
+This is actually a way to save writing code, and present the variables in a more clear and flexible way.
+
+
+11. Polymorphism is a concept used by inheritance within classes. With the help of this concept, the class that inherits becomes of the type of the class from which it inherits as well as of its type.
+As a result it is possible to create several meanings for values from a class. 
+We will want to use it when we want to give a different meaning to an existing function or use a function from the other class.
+
+
+12. A static feature or function is predefined within the class, and does not require creating a new object and using its features, these are the use of general variables. This functionality is different from normal functions or features because it does not use the constructor, or features of the class, these are only in a certain functionality.
+We would like to use static when the class describes things that do not change or have several types (like a person), for example the static class math.
+A static attribute will be defined similarly to defining a normal variable (not in a class).
+“attribute = value”
+A static function is defined when it has
+"@staticmethod".
+
+
+Enums:
+
+
+1.  enums are variables with a common property that can be bundled into a class, in a way that will be easier to access and more readable to the user.
+2. We prefer to use enums over numbers or strings - because it is more readable and understandable.
+Plus because it will prevent spelling mistakes.
