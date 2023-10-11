@@ -1,0 +1,36 @@
+﻿HTTP Questions
+1. IETF is an organisation that identifies, discusses, and creates technical specifications and standards for the internet's various protocols and technologies.
+2. Communication protocol is a set of definitions and documents responsible for enabling communication between two or more components. They do this by defining rules for formatting, processing, sending and receiving information on the network.
+3. RFC is a type of document that describes the Internet protocols and useful devices, how they can be used well and correctly on the Internet.
+4. HTTP is a protocol that allows us to transfer and receive information in web browsers. With it you can display information such as text, images, video and more. In addition, it allows web browsing.
+5. HTTP differs from HTTPS in terms of the security of the transmitted information. HTTP has the TCP/IP protocol responsible for verifying sending and receiving information. When the information is sent in the HTTP protocol, there is no operation that takes care of hiding the information - it remains visible during its transfer and its content can be seen when it is transferred.
+On the other hand the HTTPS protocol is responsible for the same thing as HTTP but it does so securely by using the SSL protocol. This protocol is designed to secure the communication between the server and the client by encrypting it. In addition, today HTTPS uses the newer SSL protocol and is TLS designed for the same purpose.
+6. The general model of http protocol is the process between the client and the internet server - where the requests to receive and send the information are made.
+7. user-agent is a part of an HTTP request that contains information about the characteristics and capabilities of the client, so that the server knows how to treat and conduct itself in front of the client.
+A web server is a software or component that contains the information that the client requests using an HTTP request. It listens for HTTP requests and responds by transferring the required documents.
+
+
+
+
+Proxies are a kind of range between the server and the client. They have several functions such as improving security, performance and privacy.
+8. Proxies are used to mediate between the client and the server (usually while surfing the net). They are responsible for securing the customer's information, regulating the information, etc. They do this by changing the client's identity when communicating with the server. or change the client's IP address. In addition, they prevent other users from accessing the information. They also hide the customer's identity while browsing.
+9. What is meant by "have a state" in communication protocols is whether the protocol maintains the information of the connection in the session or its progress in the connection.
+10. The HTTP protocol is not considered a "have a state" protocol. Each of his requests is independent and does not depend on the requests that preceded it or the content of the conversation that took place.
+
+
+11. HTTP Flow:
+Client initialization
+HTTP Requests
+Transmission of request
+Server receipt
+Server response
+Transmission of response
+Client processing
+Interaction completion
+12. User-agent, Host, Refer, Accept, Cookie, Authorization.
+13. Cookies are a browser add-on that collects information about the user and thus adapts the advertisements and various offers to the user.
+14. ELEMENTS IN HTTP REQUESTS:
+Http method, URI, HTTP version, Headers, message body.
+15. ELEMENTS IN HTTPRESPONSE:
+Status line, Response Headers, Message Body.
+16. HTTP/3 is the third major version of HTTP. It's designed to improve the performance, security, and efficiency of web communication compared to its predecessor, HTTP/2.
