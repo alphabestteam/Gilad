@@ -1,0 +1,20 @@
+﻿QuerySet:
+1. Parentss_with_details = Parent.objects.values(‘name’, ‘id’, ‘birth_date’, ‘city’, ‘work_place’, ‘salary’)
+Parents_list = list(parents_with_details)
+2. from peoples.models import Parent
+google_parents_count = Parent.objects.filter(work_place="Google").count()
+3. parents_ordered _by_birthday = Parent.objects.annotate(oldest_child_birth_date  = models.Min(‘children__birth_date’)).order_by(‘-oldest_child_birth_date’)
+4. from peoples.models import Person
+People_with_i_in_name = Person.objects.filter(name__icontains=’i’)
+5. from django.db.models import Q
+People_in_raanana_tel_aviv = Person.objects.filter(Q(city__iexact=’raanana’) | Q(city__iexact=’tel aviv’))
+6. from django.db.models import Avg
+Average_salary = Parent.objects.aggregate(avg_salary=Avg(‘salary’))
+7. from django.db.models import F
+Parents_with_children_count = Parent.objects.annotate(num_children=Count(‘children’)).values(‘name’, ‘num_children’)
+8. from django.db.models import Sum
+Total_children_count = Parent.objects.aggregate(children_count=Sum(‘children__count’))[‘children_count’]
+Result_dict = {‘children_count’: total_children_count}
+9. highest_salary_person = Parent.objects.order_by(‘-salary’).first()
+Highest_salary_queryset = Parent.objects.filter(id=highest_salary_person.id)
+10.    Children_with_high_salary_parents =    Person.objects.filter(parents__salary__gte=50000)
