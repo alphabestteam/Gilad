@@ -1,0 +1,29 @@
+﻿DRF - EX1:
+2. By using request.data.
+3. Query_params are parameters that are sent in the URL by the Client. They are added to the end of a URL after a question mark (?) and are typically in the form of key-value pairs separated by ampersands (&). Query parameters provide a mechanism for clients to specify additional information or constraints when making requests to a web server. They are often used in APIs to filter, sort, or paginate data. 
+4. HttpResponse and Response are also used for the same purpose.
+But HTTPResponse is responsible for creating API responses in known web applications, while Response is responsible for creating API responses in Internet applications that are actually built in Django.
+FBV is the simplest way to write functions in Django. In this way, you receive a request with information, and return an HTTP response.
+CBV This is not the usual way to define functions in Django. In this way you can get information about the HTTP request and perform functionality accordingly. This way will sometimes be more understandable and effective because it is arranged according to behaviours.
+6. By define: 
+@api_view(['GET', 'PUT', 'DELETE'])
+And make Conditions like this: 
+if request.method == 'GET':
+7. The save() function in Django determines whether to create a new object or update an existing object based on the state of the object itself. 
+
+
+
+
+It checks whether the object already exists in the database by examining its primary key (PK) field.
+8. If you want to validate user input, you can add custom validation logic to your form's clean methods. The clean method performs custom validation, and if the validation fails, it raises a ValidationError. To display these errors in a view, you can render the form, and the error messages will be included in the HTML.
+9. This line is responsible for checking whether the entered information is correct or not. Only if the information is incorrect will the program raise an error. In my opinion, this way is a less good way than the usual way. Because it is less readable and understandable.
+10. This can be done by the UPDATE function.
+11. The depth indicates how many "levels" of serialisation the program will go through
+12. read_only_fields is an option in the serializer, which contains fields. When the program runs in the update function, whatever is in this field will not be updated in the deserialization process.
+13. SerializerMethodField is a field in Django Rest Framework (DRF) serializers that allows you to include custom, computed, or read-only fields in your serialised data. 
+14. SlugRelatedField is an option in Django that allows you to manage how the information will be displayed to the user when it is removed from the DB. The option read_only = True defines that the displayed information will not be editable.
+15.select_related prefetch_related are ways in Django to import information from the DB using simple and short queries.
+seclet_related- in this way information can be imported with the help of the foreign key, when the relationship is one-to-one.
+seclet_related- in this way information can be imported with the help of the foreign key, when the relationship is many-to-many.
+16. Writable nested serializers allow you to create objects in a more complex way, by relationships between the objects. As in the example of Album and Track models where there is a relationship between the album and the amount of tracks - and the way to represent them is dependent on each other.
+When the relationships are more complicated, you can use packages like django-rest-framework-recursive, drf-writable-nested- which simplify and deal more effectively with the serialization process with complicated relationships
