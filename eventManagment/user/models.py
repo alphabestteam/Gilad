@@ -9,8 +9,9 @@ class UserProfile(models.Model):
     email = models.EmailField(unique=True)
     unread_messages = models.IntegerField(default=0)
 
-    
-    def create(self)
+    def create(self, validated_data):
+        return UserProfile(**validated_data)
+        
     
     def __str__(self):
         return self.representative_name  # You can change this to display the user's name or username
