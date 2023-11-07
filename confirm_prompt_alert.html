@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <h1>Hello Bob!</h1>
+    <h3> Patrick is lost and you have to look for him.</h3>
+
+    <div>
+        <p>Are you going out looking for him now?</p>
+        <p>Click OK or Cancel in the button.</p>
+        <button onclick="bobDecision()">Your decision</button>
+    </div>
+
+
+    <script>function bobDecision() {
+            /*
+                function that ask the user some questions.
+                the interaction with the user doing by alerts, prompt and confirms.
+            */
+
+            let text = "Are you going out looking for him now?:\nPress OK or Cancel in the button.";
+            if (confirm(text) == true) {
+                alert("Good luck Bob in your journey!");
+                let bobsAnswer = prompt("Hi Bob, I need you to tell me if you found Patrick? (enter yes/no)")
+                if (bobsAnswer == "yes") {
+                    alert("Yessssss!! Thanks for finding my friend Patrick.")
+                } else {
+                    bobDecision()
+                }
+            } else {
+                bobDecision()
+            }
+        } </script>
+
+
+</body>
+
+</html>
