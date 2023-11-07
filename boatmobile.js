@@ -1,1 +1,0 @@
-const isSufficientFuel = (distance, literPerKm, fuelLeft) => ((literPerKm * fuelLeft) >= distance)
