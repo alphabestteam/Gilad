@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    
+    <input type="number" name="score" id="student_score"><br><br>
+    <input type="submit" id="submit_button" value="Check score">
+
+    <p id="grade_explain"></p>
+
+    <script>
+
+        document.getElementById("submit_button").addEventListener("click", function(){
+            const studentInput = parseInt(document.getElementById("student_score").value);
+            const letterScore = getLetterScore(studentInput);
+            const grade_explain = getDetailedScore(letterScore);
+            document.getElementById("grade_explain").innerHTML = grade_explain;
+        });
+
+        function getLetterScore(studentInput){
+            if (studentInput == 100){
+                return "A+";
+            }  
+            else if (studentInput >= 90 && studentInput <= 99){
+                return "A";
+            }
+            else if (studentInput >= 80 && studentInput <= 89){
+                return "B";
+            }
+            else if (studentInput >= 70 && studentInput <= 79){
+                return "C";
+            }
+            else if (studentInput >= 60 && studentInput <= 69){
+                return "D";
+            }
+            else if (studentInput >= 50 && studentInput <= 59){
+                return "E";
+            }
+            else if (studentInput < 50){
+                return "F";
+            }
+        } 
+
+        function getDetailedScore(letterScore){
+            switch (letterScore) {
+                case "A+":
+                    return "Perfect!";
+                    break;
+                case "A":
+                    return "Amazing!";
+                    break;
+                case "B":
+                    return "Nicley done!";
+                    break;
+                case "C":
+                    return "This is fine!";
+                    break;
+                case "D":
+                    return "You can do better!";
+                    break;
+                case "E":
+                    return "Moed B is an option";
+                    break;
+                case "F":
+                    return "Moed B is a must!";
+                    break;
+                    default:
+                        return "Invalid score";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
