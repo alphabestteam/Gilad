@@ -7,3 +7,19 @@ List of endpoints:
   POST - http://localhost:8000/orders -> An endpoint to handle an order. The order is in the http body as so: { 'items': items }
 
 */
+// let promise1 = new Promise(function(myResolve, myReject){
+//   setTimeout(function() { myResolve()})
+//   fetch("https://jsonplaceholder.typicode.com/posts/1")
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));
+// });
+
+async function fetchLatestOrderJSON() {
+  const response = await fetch('http://localhost:8000/latest-order');
+  const order = await response.json();
+  return order;
+}
+
+fetchLatestOrderJSON().then(order => {
+  document.getElementById("order-form").innerHTML = order; // fetched order
+});
