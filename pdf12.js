@@ -115,3 +115,25 @@ const adultsArray = studentsArray.filter(checkAdult);
 console.log(adultsArray);
 
 
+class Car {
+    constructor(manufactorCompany, model, manufactorYear){
+        this.manufactorCompany = manufactorCompany;
+        this.model = model;
+        this.manufactorYear = manufactorYear;
+    }
+    age() {
+        const date = new Date();
+        return date.getFullYear() - this.manufactorYear;
+    }
+}
+
+const myFirstCar = new Car("Ford", "kk", 2014);
+const mySecondCar = new Car("BMW", "i", 2018);
+const myThirdCar = new Car("mazda", "x3", 2021);
+
+
+console.log(`The properties of my first car: \n manufactorCompany: ${myFirstCar.manufactorCompany}, model: ${myFirstCar.model}, manufactorYear: ${myFirstCar.manufactorYear}`);
+
+console.log(`The properties of my second car: \n manufactorCompany: ${mySecondCar.manufactorCompany}, model: ${mySecondCar.model}, manufactorYear: ${mySecondCar.manufactorYear}`);
+
+console.log(`The properties of my third car: \n manufactorCompany: ${myThirdCar.manufactorCompany}, model: ${myThirdCar.model}, manufactorYear: ${myThirdCar.manufactorYear}`);
